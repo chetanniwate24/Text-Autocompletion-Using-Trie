@@ -1,0 +1,175 @@
+*{
+    color: black;
+    background-color: lightblue;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; 
+    background-size: 400% 400%; 
+    animation: colorChange 30s ease infinite; 
+}
+button{
+    background-color: #28a745;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 11px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 3em;
+    color: #ffffff; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(135deg, #8c52ff, #6f1e51); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.input-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"], input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #444857; 
+    border-radius: 6px;
+    background-color: #333a4b; 
+    color: #ffffff; 
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+}
+
+input[type="text"]:focus, input[type="file"]:focus {
+    outline: none;
+    border-color: #8c52ff; 
+    box-shadow: 0 0 8px rgba(140, 82, 255, 0.5); 
+}
+
+#suggestions-div {
+    display: none;
+    position: absolute;
+    background-color: #444b5c; 
+    border: 1px solid #555; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+    width: 320px;
+    max-width: 90%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#suggestions-div span {
+    display: block;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    color: black; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#suggestions-div span:last-child {
+    margin-bottom: 0;
+}
+
+#suggestions-div span:hover {
+    background-color: #6f1e51; 
+    color: #ffffff; 
+    transform: scale(1.05);
+}
+
+#loading-indicator {
+    font-size: 14px;
+    color: #ffffff; 
+    text-align: center;
+    display: none;
+}
+
+#suggestions-div::-webkit-scrollbar {
+    width: 8px;
+}
+#suggestions-div::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+#suggestions-div::-webkit-scrollbar-track {
+    background: #444; 
+}
+
+@media (max-width: 600px) {
+    input[type="file"], input[type="text"] {
+        width: 90%;
+    }
+    
+    #suggestions-div {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        margin: 20px 0;
+    }
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-size: 85px;
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: roboto;
+    transform: translate(-50%,-50%);
+    background-image: #697565;
+    background-repeat: repeat;
+    background-position: 0 0;
+    -webkit-background-size: 100% 50px;
+    background-size: 100% 50px;
+    animation: animate 2s linear infinite;
+    font-weight: 900;
+}
+.titlefirst{
+    size: larger;
+    margin-top: 150px;
+    color: black;
+    font-size: xx-large;
+    
+}
+.tablefirst{
+    position: absolute;
+    left: 22%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+table, th, td {
+    border: 1px solid  ;
+    border-collapse: collapse;
+    }
+.box{
+    margin-top: 130px;
+}
+.buttonChange:hover{
+    background-color: #135723;
+}
